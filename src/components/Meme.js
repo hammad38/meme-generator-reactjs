@@ -1,17 +1,21 @@
-import React from 'react'
+import React from "react";
 
 const Meme = () => {
   return (
     <div>
-        <main>
-          <form action="" className='form'>
-            <input placeholder='Top Text' type="text" className='form--input'/>
-            <input placeholder='Bottom Text' type="text" className='form--input' />
-            <button className='form--button' >Get a new meme image</button>
-          </form>
-        </main>
+      <main>
+        <div action="" className="form">
+          <input placeholder="Top Text" type="text" className="form--inputs" />
+          <input
+            placeholder="Bottom Text"
+            type="text"
+            className="form--inputs"
+          />
+          <button className="form--button">Get a new meme image</button>
+        </div>
+      </main>
     </div>
-  )
-}
+  );
+};
 
-export default Meme
+export default Meme;
