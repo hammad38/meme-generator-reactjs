@@ -12,8 +12,6 @@ const Meme = () => {
 
   const [allMemeImages, setAllMemeImages] = useState(memesData)
 
-
-
   const getMemeImage = () => {
     const memesArray = allMemeImages.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
