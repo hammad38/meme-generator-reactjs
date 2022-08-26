@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import memesData from "../memesData";
 
 const Meme = () => {
-  // const [memeImage, setMemeImage] = useState("https://i.imgflip.com/1bij.jpg");
 
   const [meme, setMeme] = useState({
     topText: "",
@@ -11,7 +10,7 @@ const Meme = () => {
   });
 
   const [allMemeImages, setAllMemeImages] = useState(memesData);
-
+console.log(setAllMemeImages)
   //changing image on click
   const getMemeImage = () => {
     const memesArray = allMemeImages.data.memes;
