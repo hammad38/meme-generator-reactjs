@@ -7,9 +7,9 @@ import Form from './components/Form'
 const App = () => {
   return (
     <div>
-      {/* <Header />
-      <Meme /> */}
-      <Form />
+      <Header />
+      <Meme />
+      {/* <Form /> */}
     </div>
   )
 }

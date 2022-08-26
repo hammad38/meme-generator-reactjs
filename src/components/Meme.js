@@ -7,18 +7,18 @@ const Meme = () => {
   const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
-    randomImage: "https://i.imgflip.com/1bij.jpg"
-  })
+    randomImage: "https://i.imgflip.com/1bij.jpg",
+  });
 
-  const [allMemeImages, setAllMemeImages] = useState(memesData)
+  const [allMemeImages, setAllMemeImages] = useState(memesData);
 
   const getMemeImage = () => {
     const memesArray = allMemeImages.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
-    const url = memesArray[randomNumber].url 
-    setMeme(prevMeme => ({
+    const url = memesArray[randomNumber].url;
+    setMeme((prevMeme) => ({
       ...prevMeme,
-      randomImage: url
+      randomImage: url,
     }));
   };
 
@@ -31,7 +31,11 @@ const Meme = () => {
           Get a new meme image
         </button>
       </div>
-      <img src={meme.randomImage} alt="" className="meme--image" />
+      <div className="meme">
+        <img src={meme.randomImage} alt="" className="meme--image" />
+        <h1 className="meme--text top">One does not simply</h1>
+        <h1 className="meme--text bottom">Walk into mordor</h1>
+      </div>
     </main>
   );
 };
