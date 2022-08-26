@@ -67,7 +67,7 @@ main{
     margin-right: auto  ;
     border-radius: 3px;
     display: flex;
-    /* width: 50%; */
+    margin-top: 20px;
 }
 
 .meme--text{
@@ -84,15 +84,15 @@ main{
     color: white;
     letter-spacing: 1px;
     text-shadow:
-        2px 2px 0 #000,
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        0 2px 0 #000,
-        2px 0 0 #000,
-        0 -2px 0 #000,
-        -2px 0 0 #000,
-        2px 2px 5px #000;
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
 }
 
 .bottom{
